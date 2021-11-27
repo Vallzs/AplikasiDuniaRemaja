@@ -31,6 +31,7 @@ class MyFriendAdapter (private val context: Context, private val items:ArrayList
                     txtfriendsTelp.text=item.telp
                     txtfriendsJkel.text=item.jkel
                     txtfriendsAlamat.text=item.alamat
+
                 }
             }
     }

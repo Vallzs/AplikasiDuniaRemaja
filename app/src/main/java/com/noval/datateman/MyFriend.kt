@@ -6,4 +6,5 @@ class MyFriend (
     val email:String,
     val telp:String,
     val alamat:String
+
 )

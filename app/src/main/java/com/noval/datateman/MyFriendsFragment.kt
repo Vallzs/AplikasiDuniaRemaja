@@ -13,6 +13,7 @@ import kotlinx.android.synthetic.main.fragment_my_friend.*
 class MyFriendsFragment : Fragment() {
     lateinit var listTeman:ArrayList<MyFriend>
 
+
     private fun simulasiDataTeman() {
         listTeman= ArrayList()
         listTeman.add(MyFriend("Samsul Arifin", "Laki-laki",
