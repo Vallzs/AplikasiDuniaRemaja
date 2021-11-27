@@ -8,16 +8,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:layout_margin="16dp"
+        android:layout_margin="18dp"
         android:text="List Teman"
         android:gravity="center_horizontal" />
 
-    <androidx.recyclerview.widget.RecyclerView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/rv_listMyFriends"
-        android:layout_margin="16dp" />
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_listMyFriends"
+                android:layout_margin="18dp" />
+        </RelativeLayout>
+    </ScrollView>
 
 
 </LinearLayout>

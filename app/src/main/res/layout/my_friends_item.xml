@@ -27,6 +27,20 @@
         android:text="Telp"
         android:textSize="16sp"
         android:layout_marginTop="6dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtfriendsJkel"
+        android:text="Jkel"
+        android:textSize="16sp"
+        android:layout_marginTop="6dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtfriendsAlamat"
+        android:text="Alamat"
+        android:textSize="16sp"
+        android:layout_marginTop="6dp"/>
     <androidx.viewpager2.widget.ViewPager2
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
