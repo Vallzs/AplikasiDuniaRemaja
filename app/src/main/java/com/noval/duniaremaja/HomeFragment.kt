@@ -26,7 +26,6 @@ class HomeFragment : Fragment() {
         listTeman.add(Home("Saat Kita Jatuh Cinta", "AIU AHRA", R.drawable.gambar9))
         listTeman.add(Home("Sebatas Mimpi", "Hujan Mimpi", R.drawable.gambar10))
 
-
     }
 
     private fun tampilTeman() {
