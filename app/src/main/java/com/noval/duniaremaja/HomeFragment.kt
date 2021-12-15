@@ -8,19 +8,18 @@ import androidx.annotation.Nullable
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.*
-import kotlinx.android.synthetic.main.fragment_my_friend.*
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
     lateinit var listTeman:ArrayList<Home>
 
-
     private fun simulasiDataTeman() {
         listTeman= ArrayList()
-        listTeman.add(Home("Biru dan Pink", "", R.drawable.gambar1))
+        listTeman.add(Home("Biru dan Pink", "StrawbreryAlice", R.drawable.gambar1))
         listTeman.add(Home("Gustira", "Kata Kokoh", R.drawable.gambar2))
         listTeman.add(Home("Kambing dan Hujan", "Mahfud Ikhwan", R.drawable.gambar3))
         listTeman.add(Home("Mahasiswa Koplak", "Wisnu Maulana", R.drawable.gambar4))
-        listTeman.add(Home("Negeri 5 Menara", "a.fuadi", R.drawable.gambar5))
+        listTeman.add(Home("Negeri 5 Menara", "A.Fuadi", R.drawable.gambar5))
         listTeman.add(Home("Perahu Kertas", "Dee Lestari", R.drawable.gambar6))
         listTeman.add(Home("Pergi", "Tere Liye", R.drawable.gambar7))
         listTeman.add(Home("Samudra Alaskan dan Aurora", "Anandaeka", R.drawable.gambar8))
