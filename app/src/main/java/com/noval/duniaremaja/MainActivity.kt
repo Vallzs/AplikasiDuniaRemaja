@@ -1,4 +1,4 @@
-package com.noval.datateman
+package com.noval.duniaremaja
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,8 +7,8 @@ import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    val menuTeks = arrayOf("Teman","GitHub","Profile")
-    val menuIcon = arrayOf(R.drawable.ic__16242_home_icon, R.drawable.ic__26591_add_circle_icon, R.drawable.ic__092564_profile_about_mobile_ui_user_icon)
+    val menuTeks = arrayOf("Beranda","Genre")
+    val menuIcon = arrayOf(R.drawable.ic__16242_home_icon, R.drawable.ic__26591_add_circle_icon)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

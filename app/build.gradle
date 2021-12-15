@@ -8,14 +8,14 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.noval.datateman"
+        applicationId "com.noval.duniaremaja"
         minSdk 21
         targetSdk 31
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
 
     buildTypes {
         release {
@@ -47,7 +47,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
-    implementation 'com.google.android.material:material:1.2.0-alpha06'
-
+    implementation 'com.google.android.material:material:1.2.1'
     implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation "androidx.core:core-ktx:+"
 }
