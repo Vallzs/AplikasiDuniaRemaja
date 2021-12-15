@@ -1,4 +1,4 @@
-package com.noval.datateman
+package com.noval.duniaremaja
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
@@ -6,14 +6,13 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 
 class ViewPagerAdapter (fragmentActivity: FragmentActivity) :
         FragmentStateAdapter(fragmentActivity) {
-    private val JUMLAH_MENU = 3
+    private val JUMLAH_MENU = 2
 
     override fun createFragment(position: Int): Fragment {
         when (position) {
-            0 -> {return MyFriendsFragment()}
-            1 -> {return GitHubFragment()}
-            2 -> {return ProfileFragment()}
-            else -> {return GitHubFragment()}
+            0 -> {return HomeFragment()}
+            1 -> {return GenreFragment()}
+            else -> {return GenreFragment()}
         }
     }
 
