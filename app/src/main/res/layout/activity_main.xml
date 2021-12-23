@@ -13,16 +13,33 @@
      android:layout_height="0dp"
      android:layout_weight="1" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/float_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:contextClickable="true"
+        android:src="@drawable/info"
+        android:backgroundTint="@color/purple_500"
+        android:background="@color/white"
+        app:backgroundTintMode="src_in"
+        android:backgroundTintMode="src_in"
+        app:backgroundTint="@color/white"
+        />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1.5dp"
         android:background="#FF5000"></View>
+
+
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
+
 
 
 </LinearLayout>

@@ -10,7 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DataTeman">
         <activity
-            android:name="com.noval.duniaremaja.MainActivity"
+            android:name=".InfoActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".InfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
