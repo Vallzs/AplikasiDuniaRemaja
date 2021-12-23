@@ -2,11 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="INI FRAGMENT Genre" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Romantis"
+        android:id="@+id/btn_romantis"
+        android:layout_margin="10dp" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Fantasy"
+        android:id="@+id/btn_fantasy"
+        android:layout_margin="10dp" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Aksi"
+        android:id="@+id/btn_aksi"
+        android:layout_margin="10dp" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Komedi"
+        android:id="@+id/btn_komedi"
+        android:layout_margin="10dp" />
+
 
 </LinearLayout>
