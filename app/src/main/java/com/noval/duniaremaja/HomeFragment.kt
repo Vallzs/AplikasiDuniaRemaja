@@ -11,26 +11,26 @@ import kotlinx.android.synthetic.*
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
-    lateinit var listItem:ArrayList<Home>
+    lateinit var listTeman:ArrayList<Home>
 
-    private fun ListItem() {
-        listItem= ArrayList()
-        listItem.add(Home("Biru dan Pink", "StrawbreryAlice", R.drawable.gambar1))
-        listItem.add(Home("Gustira", "Kata Kokoh", R.drawable.gambar2))
-        listItem.add(Home("Kambing dan Hujan", "Mahfud Ikhwan", R.drawable.gambar3))
-        listItem.add(Home("Mahasiswa Koplak", "Wisnu Maulana", R.drawable.gambar4))
-        listItem.add(Home("Negeri 5 Menara", "A.Fuadi", R.drawable.gambar5))
-        listItem.add(Home("Perahu Kertas", "Dee Lestari", R.drawable.gambar6))
-        listItem.add(Home("Pergi", "Tere Liye", R.drawable.gambar7))
-        listItem.add(Home("Samudra Alaskan dan Aurora", "Anandaeka", R.drawable.gambar8))
-        listItem.add(Home("Saat Kita Jatuh Cinta", "AIU AHRA", R.drawable.gambar9))
-        listItem.add(Home("Sebatas Mimpi", "Hujan Mimpi", R.drawable.gambar10))
+    private fun simulasiDataTeman() {
+        listTeman= ArrayList()
+        listTeman.add(Home("Biru dan Pink", "StrawbreryAlice", R.drawable.gambar1))
+        listTeman.add(Home("Gustira", "Kata Kokoh", R.drawable.gambar2))
+        listTeman.add(Home("Kambing dan Hujan", "Mahfud Ikhwan", R.drawable.gambar3))
+        listTeman.add(Home("Mahasiswa Koplak", "Wisnu Maulana", R.drawable.gambar4))
+        listTeman.add(Home("Negeri 5 Menara", "A.Fuadi", R.drawable.gambar5))
+        listTeman.add(Home("Perahu Kertas", "Dee Lestari", R.drawable.gambar6))
+        listTeman.add(Home("Pergi", "Tere Liye", R.drawable.gambar7))
+        listTeman.add(Home("Samudra Alaskan dan Aurora", "Anandaeka", R.drawable.gambar8))
+        listTeman.add(Home("Saat Kita Jatuh Cinta", "AIU AHRA", R.drawable.gambar9))
+        listTeman.add(Home("Sebatas Mimpi", "Hujan Mimpi", R.drawable.gambar10))
 
     }
 
-    private fun tampilItem() {
+    private fun tampilTeman() {
         recycler_view.layoutManager=LinearLayoutManager(activity)
-        recycler_view.adapter=HomeAdapter(requireActivity(), listItem)
+        recycler_view.adapter=HomeAdapter(requireActivity(), listTeman)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,8 +51,8 @@ class HomeFragment : Fragment() {
     }
 
     private fun initView() {
-        ListItem()
-        tampilItem()
+        simulasiDataTeman()
+        tampilTeman()
     }
 
     override fun onDestroy() {

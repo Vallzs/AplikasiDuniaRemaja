@@ -1,0 +1,2 @@
+com/noval/duniaremaja/BuildConfig.java
+ com.noval.duniaremaja.BuildConfig
